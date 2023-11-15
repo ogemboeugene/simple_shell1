@@ -11,11 +11,11 @@
 #include <errno.h>
 
 
-int shell_ctrld(char **args);
-int shell_cd(char **args);
-int shell_help(char **args);
+int custom_shell_ctrld(char **args);
+int custom_shell_cd(char **args);
+int custom_shell_help(char **args);
 extern char **environ;
-int shell_exit(char **argv);
+int custom_shell_exit(char **argv);
 int _strcmp(char *s1, char *s2);
 size_t _strncmp(char *s1, char *s2, size_t n);
 int _strlen(char *s);
@@ -35,7 +35,7 @@ char *read_line(void);
 void _getenv(char **env);
 char **tokenize(char *lptr);
 void _exit_command(char **args, char *lineptr, int _exit);
-int _fork(char **argc, char **argv, char **env,
+int custom_fork(char **argc, char **argv, char **env,
 char *lineptr, int np, int c);
 int _setenv(char **args);
 int _unsetenv(char **args);
