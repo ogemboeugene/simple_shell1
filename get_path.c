@@ -1,0 +1,30 @@
+#include "main.h"
+/**
+ * Function to retrieve the PATH variable value from environment variables
+ * @param env: Array of environment variables
+ * Return: Pointer to the value of the PATH variable
+ */
+
+char *get_path(char **env)
+{
+	size_t i = 0, var = 0, count = 5;
+	char *path = NULL;
+
+	for (i = 0; _strncmp(env[i], "PATH=", 5); i++)
+		;
+	if (env[i] == NULL)
+		return (NULL);
+
+	for (count = 5; env[i][var]; var++, count++)
+		;
+	path = malloc(sizeof(char) * (count + 1));
+
+	if (path == NULL)
+		return (NULL);
+
+	for (var = 5, count = 0; env[i][var]; var++, count++)
+		path[count] = env[i][var];
+
+	path[count] = '\0';
+	return (path);
+}
