@@ -1,5 +1,5 @@
-#ifndef SHELL_H
-#define SHELL_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -43,4 +43,4 @@ void handle_setenv_command(char **args);
 void handle_unsetenv_command(char **args);
 
 
-#endif /* SHELL_H */
+#endif /* MAIN_H */
