@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * test - prints hello world
+ * check - prints Ogembo Eugine
  *
  * return: void
  */
 
-void test(void)
+void check(void)
 {
-	printf("Hello world");
+	printf("Ogembo Eugine);
 }
