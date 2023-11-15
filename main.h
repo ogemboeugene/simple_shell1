@@ -33,7 +33,7 @@ int value_path(char **arg, char **env);
 char *_getline_command(void);
 char *read_line(void);
 void print_environment(char **env);
-char **tokenize(char *lptr);
+char **tokenize_input(char *lptr);
 void _exit_command(char **args, char *lineptr, int _exit);
 int custom_fork(char **argc, char **argv, char **env,
 char *lineptr, int np, int c);
