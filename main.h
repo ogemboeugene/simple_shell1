@@ -32,13 +32,13 @@ char *get_path(char **env);
 int value_path(char **arg, char **env);
 char *_getline_command(void);
 char *read_line(void);
-void _getenv(char **env);
+void print_environment(char **env);
 char **tokenize(char *lptr);
 void _exit_command(char **args, char *lineptr, int _exit);
 int custom_fork(char **argc, char **argv, char **env,
 char *lineptr, int np, int c);
-int _setenv(char **args);
-int _unsetenv(char **args);
+int _set_environment_variable(char **args);
+int _unset_environment_variable(char **args);
 void handle_setenv_command(char **args);
 void handle_unsetenv_command(char **args);
 
